@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        applicationId "thomain.pierre.test"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            multiDexEnabled false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            multiDexEnabled false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+
+    implementation appDependencies.recyclerView
+    implementation appDependencies.cardView
+    implementation appDependencies.material
+    implementation appDependencies.appCompat
+    implementation appDependencies.androidXCoreKtx
+    implementation appDependencies.lifecycle
+    implementation appDependencies.cardView
+
+    implementation appDependencies.constraintLayout
+    implementation appDependencies.glide
+
+    implementation appDependencies.kotlinJdk8
+    implementation appDependencies.kotlinReflect
+
+    //personal lib, see https://github.com/pthomain/boilerplate
+    implementation appDependencies.boilerplateCore
+    implementation appDependencies.boilerplateUi
+
+    //personal lib for caching, see https://github.com/pthomain/dejavu
+    implementation appDependencies.dejavu
+
+    compileOnly appDependencies.jsr250
+    implementation appDependencies.dagger
+    kapt appDependencies.daggerCompiler
+
+    kaptTest appDependencies.daggerCompiler
+
+    implementation appDependencies.rxJava
+    implementation appDependencies.rxKotlin
+    implementation appDependencies.rxAndroid
+
+    implementation appDependencies.okHttp
+    implementation appDependencies.okHttpLogging
+
+    implementation appDependencies.retrofit
+    implementation appDependencies.retrofitConverterGson
+    implementation appDependencies.retrofitAdapterRxJava
+
+    implementation appDependencies.gson
+
+    testImplementation appDependencies.androidXtestCore
+    testImplementation appDependencies.androidXtestRunner
+    testImplementation appDependencies.androidXtestRules
+    testImplementation appDependencies.androidXjUnit
+
+    testImplementation appDependencies.jUnit
+    testImplementation appDependencies.mockitoCore
+    testImplementation appDependencies.robolectric
+    testImplementation appDependencies.okHttpMock
+    testImplementation appDependencies.mockitoKotlin
+    testImplementation appDependencies.robolectric
+
+}

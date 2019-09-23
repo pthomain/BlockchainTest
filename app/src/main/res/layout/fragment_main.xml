@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="4dp"
+        android:elevation="4dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/cache_label"
+            android:layout_width="70sp"
+            android:layout_height="30sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:gravity="center_vertical"
+            android:text="@string/cache"
+            android:textSize="12sp" />
+
+        <Switch
+            android:id="@+id/cache_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/cache_label"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/cache_metadata"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/cache_switch"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/refresh_label"
+            android:layout_width="70sp"
+            android:layout_height="30sp"
+            android:layout_below="@id/cache_label"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:text="@string/refresh"
+            android:textSize="12sp" />
+
+        <Switch
+            android:id="@+id/show_stale_temp_data_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_below="@id/cache_switch"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/refresh_label"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/refresh_status"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_below="@id/cache_metadata"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/show_stale_temp_data_switch"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/balance_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet Balance"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/balance_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

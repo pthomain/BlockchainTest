@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pierre Thomain Blockchain Test</string>
+    <string name="loading">Loading…</string>
+    <string name="refreshing">Refreshing…</string>
+    <string name="cache">Cache (10s)</string>
+    <string name="refresh">Show temp stale data</string>
+    <string name="cache_cleared">The cache is empty</string>
+    <string name="cache_clearing_error">Could not clear the cache</string>
+    <string name="cache_entries_available">Offline data available (try restarting in Airplane mode)</string>
+    <string name="cache_entries_unavailable">No offline data available</string>
+    <string name="cache_date">Cached on %s</string>
+    <string name="fresh_data_metadata">Data fresh from network</string>
+    <string name="refreshed_data_metadata">Refreshed cache data</string>
+    <string name="date_today_metadata">today at %s</string>
+    <string name="date_some_day_metadata">on %s</string>
+    <string name="cache_status_fresh">Fresh</string>
+    <string name="cache_status_stale">Stale</string>
+    <string name="cache_status">%1$s cached data (cached %2$s)</string>
+
+    <string name="fee">Fee: %s</string>
+    <string name="hash">Hash: %s</string>
+    <string name="transaction_date">Transaction date: %s</string>
+    <string name="network_call_failed">Network call failed</string>
+
+</resources>
