@@ -1,7 +1,7 @@
 package dev.pthomain.skeleton.domain.api.cache
 
-import uk.co.glass_software.android.mumbo.base.EncryptionManager
-import uk.co.glass_software.android.mumbo.base.EncryptionManager.KeyPolicy.ANDROIDX
+import dev.pthomain.android.mumbo.base.EncryptionManager
+import dev.pthomain.android.mumbo.base.EncryptionManager.KeyPolicy.ANDROIDX
 
 // EncryptionManager implementation that does nothing, needed to address issues with Robolectric
 class NoOpEncryptionManager : EncryptionManager {

@@ -18,15 +18,15 @@ import io.reactivex.disposables.CompositeDisposable
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
-import uk.co.glass_software.android.boilerplate.core.rx.SuccessFailureComposerFactory
-import uk.co.glass_software.android.boilerplate.core.utils.delegates.SharedPrefsDelegate
-import uk.co.glass_software.android.boilerplate.core.utils.functional.ResultOrError.ResultOrThrowable.Result
-import uk.co.glass_software.android.boilerplate.core.utils.functional.SuccessFailure
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
-import uk.co.glass_software.android.boilerplate.core.utils.rx.On
-import uk.co.glass_software.android.boilerplate.core.utils.rx.RxTransformer
-import uk.co.glass_software.android.dejavu.DejaVu
-import uk.co.glass_software.android.dejavu.interceptors.internal.error.Glitch
+import dev.pthomain.android.boilerplate.core.rx.SuccessFailureComposerFactory
+import dev.pthomain.android.boilerplate.core.utils.delegates.SharedPrefsDelegate
+import dev.pthomain.android.boilerplate.core.utils.functional.ResultOrError.ResultOrThrowable.Result
+import dev.pthomain.android.boilerplate.core.utils.functional.SuccessFailure
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.boilerplate.core.utils.rx.On
+import dev.pthomain.android.boilerplate.core.utils.rx.RxTransformer
+import dev.pthomain.android.dejavu.DejaVu
+import dev.pthomain.android.dejavu.interceptors.internal.error.Glitch
 
 class MainViewModelUnitTest {
 

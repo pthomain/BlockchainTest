@@ -8,7 +8,7 @@ import dev.pthomain.skeleton.domain.api.cache.CacheEndpoints
 import dev.pthomain.skeleton.domain.api.multi_address.MultiAddressEndpoints
 import dev.pthomain.skeleton.domain.interactors.di.InteractorModule
 import okhttp3.OkHttpClient
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
 import javax.inject.Singleton
 
 @Singleton

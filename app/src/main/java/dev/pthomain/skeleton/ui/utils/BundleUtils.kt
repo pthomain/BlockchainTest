@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Parcelable
 import androidx.fragment.app.Fragment
-import uk.co.glass_software.android.boilerplate.core.utils.bundle.*
+import dev.pthomain.android.boilerplate.core.utils.bundle.*
 import java.io.Serializable
 
 //

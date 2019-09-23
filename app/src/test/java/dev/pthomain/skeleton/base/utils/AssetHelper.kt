@@ -2,9 +2,9 @@ package dev.pthomain.skeleton.base.utils
 
 import com.google.gson.Gson
 import io.reactivex.Observable
-import uk.co.glass_software.android.boilerplate.core.utils.io.useAndLogError
-import uk.co.glass_software.android.dejavu.configuration.NetworkErrorProvider
-import uk.co.glass_software.android.dejavu.response.CacheMetadata
+import dev.pthomain.android.boilerplate.core.utils.io.useAndLogError
+import dev.pthomain.android.dejavu.configuration.NetworkErrorProvider
+import dev.pthomain.android.dejavu.response.CacheMetadata
 import java.io.*
 
 class AssetHelper(private val assetsFolder: String,

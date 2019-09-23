@@ -7,18 +7,20 @@ import android.widget.Switch
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import dev.pthomain.skeleton.App.Companion.component
+import dev.pthomain.android.boilerplate.core.mvvm.observeSuccessFailure
+import dev.pthomain.android.boilerplate.core.utils.kotlin.ifElse
 import dev.pthomain.skeleton.R
+import dev.pthomain.skeleton.di.ComponentProvider
 import dev.pthomain.skeleton.ui.di.BaseInjectedFragment
 import dev.pthomain.skeleton.ui.features.main.adapter.MultiAddressUiModel
 import dev.pthomain.skeleton.ui.features.main.di.MainComponent
 import dev.pthomain.skeleton.ui.features.main.di.MainComponentProvider
 import dev.pthomain.skeleton.ui.utils.getAmountColourInt
 import dev.pthomain.skeleton.ui.utils.satoshiToBtc
-import uk.co.glass_software.android.boilerplate.core.mvvm.observeSuccessFailure
-import uk.co.glass_software.android.boilerplate.core.utils.kotlin.ifElse
 
-class MainFragment : BaseInjectedFragment<MainComponent, MainFragment>(::MainComponentProvider) {
+class MainFragment(
+    componentProvider: (MainFragment) -> ComponentProvider<out MainComponent> = { MainComponentProvider(it) }
+) : BaseInjectedFragment<MainComponent, MainFragment>(componentProvider::invoke) {
 
     override fun layout() = R.layout.fragment_main
 

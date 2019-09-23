@@ -46,8 +46,8 @@ ext {
     rxKotlinVersion = '2.3.0'
     rxAndroidVersion = '2.1.0'
 
-    boilerplateVersion = '3.7'
-    dejavuVersion = '2.0.0-beta12'
+    boilerplateVersion = '4.0'
+    dejavuVersion = '2.0.0-beta13'
 
     glideVersion = "4.9.0"
     cardViewVersion = '1.0.0'
@@ -62,6 +62,7 @@ ext {
 
     playServicesVersion = '10.2.1'
     androidXVersion = '1.0.0'
+    androidXTestVersion = '1.2.0'
     appCompatVersion = '1.0.2'
 
     androidXversion = '1.0.0'
@@ -71,6 +72,7 @@ ext {
     mockitoVersion = '2.1.0'
     mockitoKotlinVersion = '2.0.0'
     robolectricVersion = '4.3'
+    fragmentTestingVersion = "1.1.0"
 
     appDependencies = [
             appCompat             : "androidx.appcompat:appcompat:$androidXVersion",
@@ -114,14 +116,15 @@ ext {
 
             okHttpMock            : "com.squareup.okhttp3:mockwebserver:$okhttpVersion",
 
-            androidXtestCore      : "androidx.test:core:$androidXversion",
-            androidXtestRunner    : "androidx.test:runner:$androidXtestVersion",
-            androidXtestRules     : "androidx.test:rules:$androidXtestVersion",
-            androidXjUnit         : "androidx.test.ext:junit:$androidXversion",
+            androidXtestCore      : "androidx.test:core:$androidXTestVersion",
+            androidXtestRunner    : "androidx.test:runner:$androidXTestVersion",
+            androidXtestRules     : "androidx.test:rules:$androidXTestVersion",
+            androidXjUnit         : "androidx.test.ext:junit:$androidXVersion",
 
             jUnit                 : "junit:junit:$jUnitVersion",
             mockitoCore           : "org.mockito:mockito-core:$mockitoVersion",
             mockitoKotlin         : "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion",
-            robolectric           : "org.robolectric:robolectric:$robolectricVersion"
+            robolectric           : "org.robolectric:robolectric:$robolectricVersion",
+            fragmentTesting       : "androidx.fragment:fragment-testing:$fragmentTestingVersion"
     ]
 }

@@ -19,9 +19,9 @@ import okhttp3.OkHttpClient
 import retrofit2.CallAdapter
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
-import uk.co.glass_software.android.dejavu.DejaVu
-import uk.co.glass_software.android.dejavu.interceptors.internal.error.Glitch
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.dejavu.DejaVu
+import dev.pthomain.android.dejavu.interceptors.internal.error.Glitch
 import javax.inject.Singleton
 
 @Module(includes = [SerialisationModule::class])

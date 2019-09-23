@@ -6,10 +6,10 @@ import dev.pthomain.skeleton.domain.api.multi_address.MultiAddressEndpoints
 import dev.pthomain.skeleton.domain.api.multi_address.models.MultiAddressResponse
 import dev.pthomain.skeleton.domain.cache.CacheStatisticsComposer
 import io.reactivex.Observable
-import uk.co.glass_software.android.boilerplate.core.interactors.ObservableInteractor
-import uk.co.glass_software.android.boilerplate.core.utils.kotlin.ifElse
-import uk.co.glass_software.android.dejavu.configuration.CacheInstruction
-import uk.co.glass_software.android.dejavu.configuration.CacheInstruction.Operation.Expiring.Refresh
+import dev.pthomain.android.boilerplate.core.interactors.ObservableInteractor
+import dev.pthomain.android.boilerplate.core.utils.kotlin.ifElse
+import dev.pthomain.android.dejavu.configuration.CacheInstruction
+import dev.pthomain.android.dejavu.configuration.CacheInstruction.Operation.Expiring.Refresh
 
 class GetMultiAddressInteractor private constructor(
     private val context: Context,

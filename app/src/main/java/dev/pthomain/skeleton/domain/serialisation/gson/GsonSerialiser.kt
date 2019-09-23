@@ -1,7 +1,7 @@
 package dev.pthomain.skeleton.domain.serialisation.gson
 
 import com.google.gson.Gson
-import uk.co.glass_software.android.dejavu.configuration.SimpleSerialiser
+import dev.pthomain.android.dejavu.configuration.SimpleSerialiser
 
 class GsonSerialiser(private val gson: Gson) : SimpleSerialiser() {
 

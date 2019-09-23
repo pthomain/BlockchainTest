@@ -94,5 +94,7 @@ dependencies {
     testImplementation appDependencies.okHttpMock
     testImplementation appDependencies.mockitoKotlin
     testImplementation appDependencies.robolectric
+    debugImplementation appDependencies.fragmentTesting
+    testImplementation appDependencies.fragmentTesting
 
 }

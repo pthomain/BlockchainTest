@@ -7,7 +7,7 @@ import dev.pthomain.skeleton.domain.interactors.multi_address.GetMultiAddressInt
 import dev.pthomain.skeleton.ui.di.FragmentScope
 import dev.pthomain.skeleton.ui.features.main.MainViewModel
 import dev.pthomain.skeleton.ui.features.main.adapter.MultiAddressAdapter
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
 
 @Component(
     modules = [MainModule::class],

@@ -6,8 +6,8 @@ import dev.pthomain.skeleton.base.utils.AssetHelper
 import dev.pthomain.skeleton.base.utils.MockClient
 import dev.pthomain.skeleton.domain.api.multi_address.models.MultiAddressResponse
 import okhttp3.OkHttpClient
-import uk.co.glass_software.android.dejavu.DejaVu
-import uk.co.glass_software.android.dejavu.interceptors.internal.error.Glitch
+import dev.pthomain.android.dejavu.DejaVu
+import dev.pthomain.android.dejavu.interceptors.internal.error.Glitch
 import java.io.IOException
 
 abstract class BaseTestComponentIntegrationTest<T : Any>(

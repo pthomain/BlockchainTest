@@ -4,10 +4,10 @@ import com.nhaarman.mockitokotlin2.*
 import io.reactivex.Observable
 import io.reactivex.functions.Consumer
 import io.reactivex.functions.Function
-import uk.co.glass_software.android.boilerplate.core.interactors.ObservableInteractor
-import uk.co.glass_software.android.boilerplate.core.utils.functional.ResultOrError
-import uk.co.glass_software.android.boilerplate.core.utils.functional.SuccessFailure
-import uk.co.glass_software.android.boilerplate.core.utils.rx.observable
+import dev.pthomain.android.boilerplate.core.interactors.ObservableInteractor
+import dev.pthomain.android.boilerplate.core.utils.functional.ResultOrError
+import dev.pthomain.android.boilerplate.core.utils.functional.SuccessFailure
+import dev.pthomain.android.boilerplate.core.utils.rx.observable
 
 
 inline fun <reified T : Any> prepareInteractorCallMocking(

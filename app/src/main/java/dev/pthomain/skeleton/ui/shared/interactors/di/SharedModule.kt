@@ -7,7 +7,7 @@ import dagger.Provides
 import dev.pthomain.skeleton.domain.interactors.cache.CacheMetadataInteractor
 import dev.pthomain.skeleton.ui.di.FragmentScope
 import dev.pthomain.skeleton.ui.shared.interactors.cache.FormattedCacheMetadataInteractor
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
 
 @Module
 class SharedModule(private val context: Context) {

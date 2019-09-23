@@ -7,9 +7,9 @@ import dev.pthomain.skeleton.domain.cache.CacheStatisticsComposer
 import dev.pthomain.skeleton.domain.di.DomainModule
 import dev.pthomain.skeleton.domain.serialisation.di.SerialisationModule
 import dev.pthomain.skeleton.domain.serialisation.gson.GsonSerialiser
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
-import uk.co.glass_software.android.dejavu.DejaVu
-import uk.co.glass_software.android.dejavu.interceptors.internal.error.Glitch
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.dejavu.DejaVu
+import dev.pthomain.android.dejavu.interceptors.internal.error.Glitch
 import javax.inject.Singleton
 
 @Module(

@@ -8,8 +8,8 @@ import dagger.Provides
 import dev.pthomain.skeleton.domain.di.DomainModule
 import dev.pthomain.skeleton.domain.serialisation.gson.GsonSerialiser
 import retrofit2.converter.gson.GsonConverterFactory
-import uk.co.glass_software.android.boilerplate.core.utils.delegates.Prefs
-import uk.co.glass_software.android.boilerplate.core.utils.delegates.Prefs.Companion.prefs
+import dev.pthomain.android.boilerplate.core.utils.delegates.Prefs
+import dev.pthomain.android.boilerplate.core.utils.delegates.Prefs.Companion.prefs
 import javax.inject.Singleton
 
 @Module(includes = [DomainModule::class])

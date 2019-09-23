@@ -11,16 +11,16 @@ import dev.pthomain.skeleton.domain.interactors.multi_address.GetMultiAddressInt
 import dev.pthomain.skeleton.ui.shared.interactors.cache.FormattedCacheMetadataInteractor
 import dev.pthomain.skeleton.ui.features.main.adapter.MultiAddressUiModel
 import io.reactivex.disposables.CompositeDisposable
-import uk.co.glass_software.android.boilerplate.core.mvvm.BaseViewModel
-import uk.co.glass_software.android.boilerplate.core.rx.SimpleSuccessFailureComposerFactory
-import uk.co.glass_software.android.boilerplate.core.rx.SuccessFailureComposerFactory
-import uk.co.glass_software.android.boilerplate.core.utils.delegates.SharedPrefsDelegate
-import uk.co.glass_software.android.boilerplate.core.utils.functional.ResultOrError.ResultOrThrowable
-import uk.co.glass_software.android.boilerplate.core.utils.kotlin.ifElse
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
-import uk.co.glass_software.android.boilerplate.core.utils.rx.ioUi
-import uk.co.glass_software.android.dejavu.DejaVu
-import uk.co.glass_software.android.dejavu.interceptors.internal.error.Glitch
+import dev.pthomain.android.boilerplate.core.mvvm.BaseViewModel
+import dev.pthomain.android.boilerplate.core.rx.SimpleSuccessFailureComposerFactory
+import dev.pthomain.android.boilerplate.core.rx.SuccessFailureComposerFactory
+import dev.pthomain.android.boilerplate.core.utils.delegates.SharedPrefsDelegate
+import dev.pthomain.android.boilerplate.core.utils.functional.ResultOrError.ResultOrThrowable
+import dev.pthomain.android.boilerplate.core.utils.kotlin.ifElse
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.boilerplate.core.utils.rx.ioUi
+import dev.pthomain.android.dejavu.DejaVu
+import dev.pthomain.android.dejavu.interceptors.internal.error.Glitch
 
 typealias MultiAddressResult = ResultOrThrowable<List<MultiAddressUiModel>, *>
 typealias MetaDataResult = ResultOrThrowable<String, *>

@@ -6,8 +6,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import dev.pthomain.skeleton.R
 import dev.pthomain.skeleton.ui.utils.*
-import uk.co.glass_software.android.boilerplate.core.base.adapter.BaseViewHolder
-import uk.co.glass_software.android.boilerplate.core.utils.kotlin.ifElse
+import dev.pthomain.android.boilerplate.core.base.adapter.BaseViewHolder
+import dev.pthomain.android.boilerplate.core.utils.kotlin.ifElse
 import java.math.BigDecimal
 import java.util.*
 

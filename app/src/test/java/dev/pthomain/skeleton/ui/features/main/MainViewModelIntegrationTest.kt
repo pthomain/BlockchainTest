@@ -6,7 +6,10 @@ import dev.pthomain.skeleton.ui.features.main.base.BaseMainComponentIntegrationT
 import dev.pthomain.skeleton.ui.features.main.base.MainTestComponent
 import org.junit.Assert.assertEquals
 import org.junit.Test
+import org.robolectric.annotation.LooperMode
+import org.robolectric.annotation.LooperMode.Mode.PAUSED
 
+@LooperMode(PAUSED)
 class MainViewModelIntegrationTest
     : BaseMainComponentIntegrationTest<MainViewModel>(MainTestComponent::viewModel) {
 

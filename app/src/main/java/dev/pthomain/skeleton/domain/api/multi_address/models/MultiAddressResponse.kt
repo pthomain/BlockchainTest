@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 package dev.pthomain.skeleton.domain.api.multi_address.models
 
-import uk.co.glass_software.android.dejavu.response.Cacheable
+import dev.pthomain.android.dejavu.response.Cacheable
 
 data class MultiAddressResponse (
 	val wallet : Wallet,

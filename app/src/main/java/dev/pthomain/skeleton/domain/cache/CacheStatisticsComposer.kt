@@ -1,10 +1,10 @@
 package dev.pthomain.skeleton.domain.cache
 
 import io.reactivex.*
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
-import uk.co.glass_software.android.boilerplate.core.utils.rx.On
-import uk.co.glass_software.android.boilerplate.core.utils.rx.schedule
-import uk.co.glass_software.android.dejavu.DejaVu
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.boilerplate.core.utils.rx.On
+import dev.pthomain.android.boilerplate.core.utils.rx.schedule
+import dev.pthomain.android.dejavu.DejaVu
 
 
 class CacheStatisticsComposer<T> private constructor(

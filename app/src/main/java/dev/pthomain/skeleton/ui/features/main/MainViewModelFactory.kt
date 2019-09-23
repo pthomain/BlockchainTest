@@ -6,11 +6,11 @@ import dev.pthomain.skeleton.domain.interactors.cache.ClearCacheInteractor
 import dev.pthomain.skeleton.domain.interactors.multi_address.GetMultiAddressInteractor
 import dev.pthomain.skeleton.ui.shared.interactors.cache.FormattedCacheMetadataInteractor
 import io.reactivex.disposables.CompositeDisposable
-import uk.co.glass_software.android.boilerplate.core.utils.BaseViewModelFactory
-import uk.co.glass_software.android.boilerplate.core.utils.delegates.SharedPrefsDelegate
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
-import uk.co.glass_software.android.dejavu.DejaVu
-import uk.co.glass_software.android.dejavu.interceptors.internal.error.Glitch
+import dev.pthomain.android.boilerplate.core.utils.BaseViewModelFactory
+import dev.pthomain.android.boilerplate.core.utils.delegates.SharedPrefsDelegate
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.dejavu.DejaVu
+import dev.pthomain.android.dejavu.interceptors.internal.error.Glitch
 
 class MainViewModelFactory(
     private val context: Context,

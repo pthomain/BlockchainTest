@@ -4,14 +4,14 @@ import android.content.Context
 import dev.pthomain.skeleton.R
 import dev.pthomain.skeleton.domain.interactors.cache.CacheMetadataInteractor
 import io.reactivex.Observable
-import uk.co.glass_software.android.boilerplate.core.interactors.ObservableInteractor
-import uk.co.glass_software.android.boilerplate.core.utils.kotlin.ifElse
-import uk.co.glass_software.android.boilerplate.core.utils.log.Logger
-import uk.co.glass_software.android.boilerplate.core.utils.rx.observable
-import uk.co.glass_software.android.dejavu.configuration.CacheInstruction.Operation.Type.*
-import uk.co.glass_software.android.dejavu.interceptors.internal.cache.token.CacheStatus.*
-import uk.co.glass_software.android.dejavu.interceptors.internal.error.Glitch
-import uk.co.glass_software.android.dejavu.response.CacheMetadata
+import dev.pthomain.android.boilerplate.core.interactors.ObservableInteractor
+import dev.pthomain.android.boilerplate.core.utils.kotlin.ifElse
+import dev.pthomain.android.boilerplate.core.utils.log.Logger
+import dev.pthomain.android.boilerplate.core.utils.rx.observable
+import dev.pthomain.android.dejavu.configuration.CacheInstruction.Operation.Type.*
+import dev.pthomain.android.dejavu.interceptors.internal.cache.token.CacheStatus.*
+import dev.pthomain.android.dejavu.interceptors.internal.error.Glitch
+import dev.pthomain.android.dejavu.response.CacheMetadata
 import java.text.SimpleDateFormat
 import java.util.*
 

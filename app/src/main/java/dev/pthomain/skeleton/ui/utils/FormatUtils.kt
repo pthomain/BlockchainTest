@@ -5,7 +5,7 @@ import androidx.annotation.ColorInt
 import androidx.annotation.ColorRes
 import androidx.core.content.ContextCompat
 import dev.pthomain.skeleton.R
-import uk.co.glass_software.android.boilerplate.core.utils.kotlin.ifElse
+import dev.pthomain.android.boilerplate.core.utils.kotlin.ifElse
 import java.math.BigDecimal
 import java.text.SimpleDateFormat
 

@@ -2,10 +2,10 @@ package dev.pthomain.skeleton.ui.di
 
 import android.os.Bundle
 import dev.pthomain.skeleton.di.ComponentProvider
-import uk.co.glass_software.android.boilerplate.core.base.fragment.BaseFragment
+import dev.pthomain.android.boilerplate.core.base.fragment.BaseFragment
 
 abstract class BaseInjectedFragment<C : Any, T : BaseInjectedFragment<C, T>>(
-    private val componentProvider: (T) -> ComponentProvider<C>
+    private val componentProvider: (T) -> ComponentProvider<out C>
 ) : BaseFragment() {
 
     protected lateinit var component: C

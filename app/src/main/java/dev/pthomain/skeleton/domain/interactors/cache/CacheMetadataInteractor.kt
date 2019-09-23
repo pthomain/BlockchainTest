@@ -1,9 +1,9 @@
 package dev.pthomain.skeleton.domain.interactors.cache
 
-import uk.co.glass_software.android.boilerplate.core.interactors.ObservableInteractor
-import uk.co.glass_software.android.dejavu.DejaVu
-import uk.co.glass_software.android.dejavu.interceptors.internal.error.Glitch
-import uk.co.glass_software.android.dejavu.response.CacheMetadata
+import dev.pthomain.android.boilerplate.core.interactors.ObservableInteractor
+import dev.pthomain.android.dejavu.DejaVu
+import dev.pthomain.android.dejavu.interceptors.internal.error.Glitch
+import dev.pthomain.android.dejavu.response.CacheMetadata
 
 class CacheMetadataInteractor private constructor(
     private val dejaVu: DejaVu<Glitch>,
